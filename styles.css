@@ -1,0 +1,311 @@
+/* Estilo para el logo en el encabezado */
+img#logo {
+    float: left;
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+/* Estilo para el botón Reservar */
+/* Estilo para el botón de reserva en la barra de navegación */
+#reservar-link {
+    float: right;
+    background-color: #cfd210;
+    color: rgb(6, 6, 6);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Agregar estilo de enlace para que parezca un botón */
+}
+
+/* Estilo para el botón de reserva en hover */
+#reservar-link:hover {
+    background-color: #fb0000; /* Cambiar color al pasar el mouse */
+}
+
+
+#reserva {
+    display: none;
+    /* Otros estilos */
+  }
+  
+
+/* Clearfix para el encabezado */
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: #66ff00c6;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px;
+    overflow: hidden; /* Limpiar el float dentro del encabezado */
+}
+
+/* Estilo para el título principal */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.804);
+    font-weight: bold;
+}
+
+/* Estilo para las secciones */
+section {
+    background-color: rgba(232, 232, 232, 0.804);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #40ff00eb;
+    color: white;
+    text-align: center;
+    padding: 36px;
+    margin-top: 10px;
+}
+
+/* Estilo para el logo en el footer */
+img#logo-footer {
+    width: 200px;
+    height: auto;
+    vertical-align: middle;
+    float: left;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+/* Estilo para los divs en el footer */
+.footer-div {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+/* Estilo para los títulos en los divs */
+.footer-div h3 {
+    font-size: 18px;
+}
+
+/* Estilo para el segundo div (Enlaces de Interés) */
+#enlaces-interes {
+    float: right;
+    margin-right: 0;
+    color: white;
+}
+
+/* Estilo para la sección de inicio con imagen de fondo */
+/*#inicio {
+    background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/b6/6d/cd/hotel-centenario.jpg?w=1200&h=-1&s=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 600px;
+}
+/* Estilo para la sección de inicio */
+#inicio {
+    background: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/b6/6d/cd/hotel-centenario.jpg?w=1200&h=-1&s=1') no-repeat center center fixed;
+    background-size: auto 145%; /* Ajusta el tamaño vertical (50%) y deja el ancho automático */
+    height: auto; /* La altura se ajustará automáticamente al contenido */
+}
+
+/* Estilo para el contenedor de texto en la sección de inicio */
+#imagen-fondo {
+    background-color: rgba(250, 250, 250, 0.7);
+    padding: 20px;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+/* Estilo para el contenedor de texto en la sección de inicio */
+#contenido-inicio {
+    float: right;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+}
+
+/* Estilos para la sección de reserva */
+.reserva-container {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(124, 246, 84, 0.685);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#reserva h2 {
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+#reserva p {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+#reserva select,
+#reserva input {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+#reserva button {
+    background-color: #cfd210;
+    color: rgb(6, 6, 6);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#servicios-inicio {
+    float: left;
+    width: 30%;
+    max-width: 300px; /* Agrega un ancho máximo para controlar la reducción horizontal */
+    background-color: rgba(160, 158, 158, 0.592);
+    padding: 30px;
+    margin-top: 500px;
+    border-radius: 20px;
+}
+
+/* Estilo para los servicios */
+.servicios-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.servicio.inicio {
+    width: 10%; /* Ocupará todo el ancho disponible */
+    max-width: 10px; /* Agrega un ancho máximo para controlar la reducción horizontal */
+    margin-bottom: 5px;
+    background-color: rgba(89, 204, 69, 0.7);
+    padding: 20px; /* Ajusta el padding a tu preferencia */
+    border-radius: 10px;
+}
+
+.servicio.inicio h3 {
+    font-size: 20px;
+}
+
+.servicio.inicio p {
+    font-weight: bold;
+}
+
+#servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(80, 223, 55, 0.1);
+}
+
+/* Estilo para los servicios */
+.servicios-contenido {
+    text-align: center;
+    background-color: rgba(237, 234, 234, 0.592);
+    padding: 20px 10px; /* Ajusta el padding horizontal */
+    border-radius: 20px;
+    margin-bottom: 10px;
+    width: 100%; /* Ajusta el ancho del cuadro */
+    margin: 0 auto; /* Centra el cuadro en el contenedor */
+}
+
+.servicio {
+    width: 25%; /* Ajusta el ancho de cada servicio */
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding: 10px;
+}
+
+.servicio h3 {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.servicio p {
+    font-weight: normal;
+    margin: 5px 0;
+}
+
+.servicio i {
+    font-size: 24px; /* Ajusta el tamaño del icono según tus preferencias */
+    color: #333; /* Ajusta el color del icono */
+    margin-bottom: 10px; /* Agrega un margen inferior para separar el icono del título */
+}
+
+
+
+/* Estilo para el contenedor de habitaciones */
+.habitaciones-container {
+    display: flex;
+    justify-content: space-between; /* Colocar las habitaciones equidistantes */
+    flex-wrap: wrap; /* Permitir que las habitaciones se envuelvan si el espacio es insuficiente */
+}
+
+/* Estilo para cada habitación */
+.habitacion {
+    flex: 0 0 calc(33.33% - 10px); /* Establecer el ancho de cada habitación (33.33% del ancho total) con espacio entre ellas */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco o el color que desees */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Espacio inferior entre habitaciones */
+    box-sizing: border-box; /* Incluir relleno en el ancho total */
+}
+/* Estilo para las imágenes de las habitaciones */
+.habitacion img {
+    max-width: 100%; /* Establece el ancho máximo al 100% del contenedor */
+    height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+}
+
+/* Estilo para el contenedor de restaurante */
+.restaurante-container {
+    display: flex;
+    justify-content: space-between; /* Colocar las habitaciones equidistantes */
+    flex-wrap: wrap; /* Permitir que las habitaciones se envuelvan si el espacio es insuficiente */
+}
+
+/* Estilo para cada habitación */
+.restaurante {
+    flex: 0 0 calc(33.33% - 10px); /* Establecer el ancho de cada habitación (33.33% del ancho total) con espacio entre ellas */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco o el color que desees */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Espacio inferior entre habitaciones */
+    box-sizing: border-box; /* Incluir relleno en el ancho total */
+}
+/* Estilo para las imágenes de las habitaciones */
+.restaurante img {
+    max-width: 100%; /* Establece el ancho máximo al 100% del contenedor */
+    height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+}
