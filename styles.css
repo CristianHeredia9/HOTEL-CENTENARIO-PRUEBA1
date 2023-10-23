@@ -23,7 +23,14 @@ img#logo {
 #reservar-link:hover {
     background-color: #fb0000; /* Cambiar color al pasar el mouse */
 }
+
+
+#reserva {
+    display: none;
+    /* Otros estilos */
+  }
   
+
 /* Clearfix para el encabezado */
 header::after {
     content: "";
@@ -132,6 +139,12 @@ img#logo-footer {
     background-color: rgba(255, 255, 255, 0.7);
     padding: 20px;
 }
+
+#map-container {
+    border-radius: 10px;
+    
+}
+
 
 /* Estilos para la sección de reserva */
 .reserva-container {
