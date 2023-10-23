@@ -23,14 +23,7 @@ img#logo {
 #reservar-link:hover {
     background-color: #fb0000; /* Cambiar color al pasar el mouse */
 }
-
-
-#reserva {
-    display: none;
-    /* Otros estilos */
-  }
   
-
 /* Clearfix para el encabezado */
 header::after {
     content: "";
@@ -117,14 +110,6 @@ img#logo-footer {
     color: white;
 }
 
-/* Estilo para la sección de inicio con imagen de fondo */
-/*#inicio {
-    background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/b6/6d/cd/hotel-centenario.jpg?w=1200&h=-1&s=1');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 600px;
-}
 /* Estilo para la sección de inicio */
 #inicio {
     background: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/b6/6d/cd/hotel-centenario.jpg?w=1200&h=-1&s=1') no-repeat center center fixed;
