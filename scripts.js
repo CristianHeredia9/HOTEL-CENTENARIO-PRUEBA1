@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (esPaginaDeInicio) {
             mapContainer.style.display = "block"; // Muestra el mapa en la página de inicio
         } else {
-            mapContainer.style.display = "none"; // Oculta el mapa en otras páginas
+          //  mapContainer.style.display = "none"; // Oculta el mapa en otras páginas
         }
     }
 
