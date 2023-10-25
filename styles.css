@@ -310,7 +310,7 @@ body {
 .carrusel {
   height: 100vh;
   display: flex;
-  align-items: normal;
+  align-items: flex-end;
 }
 
 .carrusel-items {
