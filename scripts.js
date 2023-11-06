@@ -14,6 +14,8 @@ function mostrarSeccion(seccionId) {
     }
     
 }
+
+//////////////////////////////////////////////////////////////////////////////////
 // Función para redirigir a la sección de "Reservar"
 function redirigirASeccionReservar() {
     mostrarSeccion("reservar"); // Esta función muestra la sección de "Reservar"
@@ -56,7 +58,7 @@ document.getElementById("reservar-link").addEventListener("click", function() {
     mostrarSeccion("reservar");
 });
 
-
+/////////////////////////////////////////////////////////////////////////////////
 // JavaScript para mostrar el mapa solo en la página de inicio
 document.addEventListener("DOMContentLoaded", function () {
     const mapContainer = document.getElementById("map-container"); // Selecciona el contenedor del mapa
@@ -78,6 +80,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Mostrar la página de inicio por defecto al cargar la página
 mostrarInicioPorDefecto();
+
+//////////////////////////////////////////////////////////////////////////////////////
+//javaScript para el carrusel de imagenes de la seccion reservar//
+document.addEventListener("DOMContentLoaded", function () {
+    const carouselImages = document.querySelectorAll(".carousel-image");
+    let currentIndex = 0;
+  
+    function mostrarSiguienteImagen() {
+      carouselImages[currentIndex].classList.remove("active");
+      currentIndex = (currentIndex + 1) % carouselImages.length;
+      carouselImages[currentIndex].classList.add("active");
+    }
+  
+    // Cambia la imagen cada 4 segundos
+    setInterval(mostrarSiguienteImagen, 4000);
+  });
+  
 
 // JavaScript para manejar la selección de habitación, cálculo de precio, validación del formulario, envío y confirmación
 document.addEventListener("DOMContentLoaded", function () {
@@ -238,7 +257,7 @@ document.addEventListener("DOMContentLoaded", function () {
     verificarCondicionesYHabilitarBoton();
 });
 
-
+//////////////////////////////////////////////////////////////////////////////////////////////
 //scripts para el carrusel de imagenes de la seccion galeria 
 const carrusel = document.querySelector(".carrusel-items");
 
