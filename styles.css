@@ -149,6 +149,15 @@ img#logo-footer {
     max-width: 500px;
     margin: 0 auto;
 }
+/* Estilos adicionales para el formulario de reserva */
+#reserva-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
 
 #reserva h2 {
     font-size: 24px;
@@ -175,6 +184,28 @@ img#logo-footer {
     border-radius: 5px;
     cursor: pointer;
 }
+
+/* Estilo para el botón de reservación */
+.reservacion-button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.reservacion-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    border-radius: 5px; /* Borde redondeado */
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Transición de color al pasar el mouse */
+}
+
+.reservacion-button a:hover {
+    background-color: #45a049; /* Cambia el color al pasar el mouse */
+}
+
 
 #servicios-inicio {
     float: left;
