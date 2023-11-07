@@ -10,8 +10,8 @@ img#logo {
 /* Estilo para el botón de reserva en la barra de navegación */
 #reservar-link {
     float: right;
-    background-color: #cfd210;
-    color: rgb(6, 6, 6);
+    background-color: #ffffff;
+    color: #282828;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -21,7 +21,7 @@ img#logo {
 
 /* Estilo para el botón de reserva en hover */
 #reservar-link:hover {
-    background-color: #fb0000; /* Cambiar color al pasar el mouse */
+    background-color: #E5C9AE; /* Cambiar color al pasar el mouse */
 }
 
 
@@ -40,7 +40,7 @@ header::after {
 
 /* Estilo para el encabezado */
 header {
-    background-color: #66ff00c6;
+    background-color: #482919;
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 5px;
@@ -66,7 +66,7 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.804);
+    color: rgba(255, 255, 255, 0.804);
     font-weight: bold;
 }
 
@@ -80,7 +80,7 @@ section {
 
 /* Estilo para el pie de página */
 footer {
-    background-color: #40ff00eb;
+    background-color: #553725;
     color: white;
     text-align: center;
     padding: 36px;
@@ -135,9 +135,11 @@ img#logo-footer {
 /* Estilo para el contenedor de texto en la sección de inicio */
 #contenido-inicio {
     float: right;
-    width: 50%;
-    background-color: rgba(255, 255, 255, 0.7);
+    width: 20%;
+    background-color: #E5D4C3;
     padding: 20px;
+    margin-left: 10%; /* Agrega espacio a la izquierda */
+    margin-right: 10%; /* Agrega espacio a la derecha */
 }
 
 
@@ -179,7 +181,7 @@ img#logo-footer {
     border-radius: 20px;
     max-width: 500px;
     margin: 0 auto;
-    background-color: rgba(42, 218, 57, 0.608);
+    background-color: rgba(255, 255, 255, 0.608);
     z-index: 1; /* Coloca el contenido del carrusel en la parte superior */
   }
     
@@ -220,7 +222,7 @@ img#logo-footer {
 }
 
 #reserva button {
-    background-color: #2dd210;
+    background-color: #ffffff;
     color: rgb(6, 6, 6);
     padding: 10px 20px;
     border: none;
@@ -238,7 +240,7 @@ img#logo-footer {
     display: inline-block;
     padding: 10px 20px;
     background-color: #4CAF50; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
+    color: #282828; /* Color del texto del botón */
     text-decoration: none; /* Quita el subrayado del enlace */
     border-radius: 5px; /* Borde redondeado */
     font-weight: bold;
