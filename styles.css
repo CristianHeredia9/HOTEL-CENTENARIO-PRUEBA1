@@ -190,13 +190,13 @@ img#logo-footer {
 .reserva-container {
     padding: 20px;
     border-radius: 20px;
-    background-color: rgb(64, 255, 0);
+    background-color: #E5C9AE;
     max-width: 500px;
     margin: 0 auto;
 }
 /* Estilos adicionales para el formulario de reserva */
 #reserva-form {
-    background-color: rgba(214, 233, 88, 0.8);
+    background-color: #D6AB7D;
     padding: 20px;
     border-radius: 10px;
     margin: 20px auto;
@@ -239,7 +239,7 @@ img#logo-footer {
 .reservacion-button a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4CAF50; /* Color de fondo del botón */
+    background-color: #ccd5ae; /* Color de fondo del botón */
     color: #282828; /* Color del texto del botón */
     text-decoration: none; /* Quita el subrayado del enlace */
     border-radius: 5px; /* Borde redondeado */
@@ -248,8 +248,9 @@ img#logo-footer {
 }
 
 .reservacion-button a:hover {
-    background-color: #45a049; /* Cambia el color al pasar el mouse */
+    background-color: #a5a58d; /* Cambia el color al pasar el mouse */
 }
+
 
 
 #servicios-inicio {
