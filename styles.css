@@ -117,33 +117,110 @@ img#logo-footer {
     color: white;
 }
 
-/* Estilo para la sección de inicio */
-#inicio {
-    background: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/b6/6d/cd/hotel-centenario.jpg?w=1200&h=-1&s=1') no-repeat center center fixed;
-    background-size: auto 145%; /* Ajusta el tamaño vertical (50%) y deja el ancho automático */
-    height: auto; /* La altura se ajustará automáticamente al contenido */
+/*-----------------------------------------------------------------*/
+#contenido-inicio {
+    max-height: 150px; /* Altura máxima por defecto en dispositivos más pequeños */
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
 }
 
-/* Estilo para el contenedor de texto en la sección de inicio */
-#imagen-fondo {
-    background-color: rgba(250, 250, 250, 0.7);
-    padding: 20px;
-    max-height: 600px;
-    overflow: hidden;
+#ver-mas {
+    display: block; /* Muestra el botón "Ver más..." por defecto en todos los dispositivos */
+}
+
+/* Estilo para dispositivos más grandes (ordenadores) */
+@media screen and (min-width: 769px) {
+    #contenido-inicio {
+        max-height: none; /* Muestra todo el contenido por defecto en dispositivos más grandes */
+    }
+
+    #ver-mas {
+        display: none; /* Oculta el botón "Ver más..." por defecto en dispositivos más grandes */
+    }
+}
+
+
+/*-----------------------------------------------------------------*/
+
+/* Estilo para el carrusel de la seccion de inicio  */
+#carousel-container-inicio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: carousel-inicio 30s infinite;
+    background-size: cover;
+    margin-bottom: 1px;
+}
+#map-container {
+    margin-bottom: 1px; /* Ajusta el margen inferior según tus preferencias */
+}
+
+@keyframes carousel-inicio {
+    0%, 100% {
+        background-image: url('fotos/IMG_49266.png');
+    }
+    20% {
+        background-image: url('fotos/IMG_49269.png');
+    }
+    40% {
+        background-image: url('fotos/IMG_5157.png');
+    }
+    60% {
+        background-image: url('fotos/IMG_6.png');
+    }
+    80% {
+        background-image: url('fotos/2.png');
+    }
 }
 
 /* Estilo para el contenedor de texto en la sección de inicio */
 #contenido-inicio {
     float: right;
     width: 20%;
-    background-color: #E5D4C3;
-    padding: 20px;
+    background-color: #f6cba1;
+    padding: 10px;
     margin-left: 10%; /* Agrega espacio a la izquierda */
     margin-right: 10%; /* Agrega espacio a la derecha */
 }
+/*--------------------------------------------------------------------------------------------------*/
+#redes-sociales-container {
+    display: flex;
+    align-items: center;
+    margin-top: 500px; /* Ajusta el valor según la separación que desees */
+}
+
+/* Estilo para el texto "Síguenos en:" */
+#siguenos-texto {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Utiliza la fuente que prefieras */
+    font-size: 20px;
+    font-weight: bold; /* Hace que el texto sea más notable */
+    color: #fbfbfb;
+    margin-right: 10px;
+}
+
+/* Estilo para los íconos de redes sociales */
+.social-icon {
+    font-size: 40px; /* Ajusta el tamaño de los íconos */
+    margin-right: 15px; /* Añade un espacio entre los íconos */
+    color: #333; /* Color por defecto */
+    transition: color 0.3s ease; /* Transición de color al pasar el mouse */
+}
+
+/* Colores específicos para cada red social */
+.facebook { color: #1877f2; }
+.instagram { color: #bc2a8d; }
+.tiktok { color: #69c9d0; }
+
+/* Cambia el color al pasar el mouse */
+.social-icon:hover {
+    color: #f61212; /* Nuevo color al pasar el mouse */
+}
 
 
-/*-----------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
 /*Estilos para el carrusel de imagenes de fondo de la seccion reservar*/
 #carousel-container {
     position: absolute;
@@ -250,43 +327,7 @@ img#logo-footer {
 .reservacion-button a:hover {
     background-color: #a5a58d; /* Cambia el color al pasar el mouse */
 }
-
-
-
-#servicios-inicio {
-    float: left;
-    width: 30%;
-    max-width: 300px; /* Agrega un ancho máximo para controlar la reducción horizontal */
-    background-color: rgba(160, 158, 158, 0.592);
-    padding: 30px;
-    margin-top: 500px;
-    border-radius: 20px;
-}
-
-/* Estilo para los servicios */
-.servicios-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.servicio.inicio {
-    width: 10%; /* Ocupará todo el ancho disponible */
-    max-width: 10px; /* Agrega un ancho máximo para controlar la reducción horizontal */
-    margin-bottom: 5px;
-    background-color: rgba(89, 204, 69, 0.7);
-    padding: 20px; /* Ajusta el padding a tu preferencia */
-    border-radius: 10px;
-}
-
-.servicio.inicio h3 {
-    font-size: 20px;
-}
-
-.servicio.inicio p {
-    font-weight: bold;
-}
-
+/*--------------------------------------------------------------------------------------------------------*/
 #servicios {
     display: flex;
     flex-direction: column;

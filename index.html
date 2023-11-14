@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-pzjw8H/lMrD9Vs6s5n9ZxPswa67iS90accPTvn8GC7f8Hr7cNmKn+Tt9kpk1xV5m" crossorigin="anonymous">
+
 </head>
 <body>
     <header>
@@ -27,19 +29,32 @@
     </header>
 
     <section id="inicio">
-        <div id="imagen-fondo">
+        <div id="carousel-container-inicio"></div>
+
             <h2>¡Vive la experiencia CENTENARIO!</h2>
             <p>Disfruta de una estancia relajante en nuestro hermoso hotel.</p>
         </div>
         <div id="contenido-inicio">
             <h1 style="font-size: 100%; text-decoration: underline;">HOTEL CENTENARIO| Huacho - Perú</h1>
-
-            <p>Somos Hotel Centenario con más de 57 años en el mundo empresarial .</p>
-
+        
+            <p>Somos Hotel Centenario con más de 57 años en el mundo empresarial.</p>
+        
             <p>Hotel Centenario es un lugar acogedor y único, se encuentra a unas cuadras de la Plaza de Armas en una de las avenidas principales de la ciudad de Huacho, conocida como la capital de la Hospitalidad, ofrece a nuestros visitantes la oportunidad de descubrir y vivir una experiencia inolvidable proporcionando un fácil acceso hacia cualquier actividad al mismo tiempo seguridad para nuestros huéspedes.</p>
+        
+            <p>También contamos con el servicio de Saratoga Restaurante ofrecemos una gama de distintos platos tradicionales, bondades que nos brinda la variada y exquisita comida peruana que podrá degustar incluso en la comodidad de su habitación o frente a nuestra terraza.</p>
+        
+            <button id="ver-mas" onclick="toggleContenido()">Ver más...</button>
+        </div>
+        
 
-            <p>También contamos con el servicio de Saratoga Restaurante ofrecemos una gama de distintos platos tradicionales, bondades que nos brinda la variada y exquisita comida peruana que podrá degustar incluso en la comodidad de su habitación o frente a nuestra terraza.</p>
-        </div> 
+        <div id="redes-sociales-container">
+            <div id="siguenos-texto">Síguenos en:</div>
+            <a href="https://www.facebook.com/CentenarioHotelHuacho" target="_blank" class="social-icon facebook" rel="noopener"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/hotelcentenario_huacho/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="social-icon instagram" rel="noopener"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@hotelcentenariohuacho?is_from_webapp=1&sender_device=pc" target="_blank" class="social-icon tiktok" rel="noopener"><i class="fab fa-tiktok"></i></a>
+        </div>
+        
+
 
         <div id="map-container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.0808456023383!2d-77.61418842508522!3d-11.107352525121698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9106df74ceed9139%3A0x4da5bbb5f06bf7ad!2sAvenida%2028%20de%20Julio%20836%2C%20Huacho%2015136!5e0!3m2!1ses-419!2spe!4v1697505244348!5m2!1ses-419!2spe" width="100%" height="100" style="border-radius: 10px; margin: 10% 0% 0%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
