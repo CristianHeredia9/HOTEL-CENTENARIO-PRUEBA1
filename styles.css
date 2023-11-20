@@ -118,30 +118,8 @@ img#logo-footer {
 }
 
 /*-----------------------------------------------------------------*/
-#contenido-inicio {
-    max-height: 150px; /* Altura máxima por defecto en dispositivos más pequeños */
-    overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
-}
-
-#ver-mas {
-    display: block; /* Muestra el botón "Ver más..." por defecto en todos los dispositivos */
-}
-
-/* Estilo para dispositivos más grandes (ordenadores) */
-@media screen and (min-width: 769px) {
-    #contenido-inicio {
-        max-height: none; /* Muestra todo el contenido por defecto en dispositivos más grandes */
-    }
-
-    #ver-mas {
-        display: none; /* Oculta el botón "Ver más..." por defecto en dispositivos más grandes */
-    }
-}
-
 
 /*-----------------------------------------------------------------*/
-
 /* Estilo para el carrusel de la seccion de inicio  */
 #carousel-container-inicio {
     position: absolute;

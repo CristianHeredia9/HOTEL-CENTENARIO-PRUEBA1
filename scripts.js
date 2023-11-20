@@ -15,17 +15,6 @@ function mostrarSeccion(seccionId) {
     
 }
 ///////////////////////////////////////////////////////////////////////////////////
-//javascript para el boton de "ver mas" en la seccion de inicio
-function toggleContenido() {
-    var contenido = document.getElementById("contenido-inicio");
-
-    if (contenido.style.maxHeight) {
-        contenido.style.maxHeight = null;
-    } else {
-        contenido.style.maxHeight = contenido.scrollHeight + "px";
-    }
-}
-
 
 //////////////////////////////////////////////////////////////////////////////////
 // Función para redirigir a la sección de "Reservar"
