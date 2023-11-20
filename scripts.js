@@ -15,7 +15,15 @@ function mostrarSeccion(seccionId) {
     
 }
 ///////////////////////////////////////////////////////////////////////////////////
-
+//script para el video comercial de la pagina de inicio
+window.fbAsyncInit = function() {
+    FB.init({
+        appId            : 'TU_APP_ID', // Reemplaza con tu ID de aplicación de Facebook
+        autoLogAppEvents : true,
+        xfbml            : true,
+        version          : 'v13.0'
+    });
+};
 //////////////////////////////////////////////////////////////////////////////////
 // Función para redirigir a la sección de "Reservar"
 function redirigirASeccionReservar() {
