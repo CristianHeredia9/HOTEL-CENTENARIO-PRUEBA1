@@ -129,7 +129,7 @@ img#logo-footer {
 #fb-video-container {
     position: absolute;
     top: 10%; /* Ajusta el valor según sea necesario para acercar el video al texto o la barra de navegación */
-    left: 30%;
+    left: 50%; /* Cambiado de 30% a 50% para centrar horizontalmente */
     transform: translate(-50%, -50%);
     width: 70%;
     max-width: 800px;
@@ -140,7 +140,7 @@ img#logo-footer {
 @media screen and (max-width: 768px) {
     #fb-video-container {
         width: 90%;
-        left: 5%;
+        left: 50%; /* Cambiado de 5% a 50% para centrar horizontalmente */
     }
 }
 
