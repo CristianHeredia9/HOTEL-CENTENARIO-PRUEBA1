@@ -72,7 +72,7 @@ nav a {
 
 /* Estilo para las secciones */
 section {
-    background-color: rgba(44, 229, 62, 0.14);
+    background-color: #e5d4c365;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -176,16 +176,46 @@ img#logo-footer {
         background-image: url('fotos/2.png');
     }
 }
-
-/* Estilo para el contenedor de texto en la sección de inicio */
-#contenido-inicio {
-    float: right;
-    width: 60%; /* Ajustado para que no sea demasiado ancho en pantallas pequeñas */
-    background-color: #f6cba1;
-    padding: 10px;
-    margin-left: 10%; /* Agrega espacio a la izquierda */
-    margin-right: 10%; /* Agrega espacio a la derecha */
+/*---------------------------------------------------------------------------------------------------------*/
+/* Estilos para el cuadro de texto de información del hotel */
+.hotel-info-container {
+    background-color: #E5C9AE; /* Color de fondo del cuadro */
+    padding: 15px; /* Espaciado interno del cuadro */
+    border-radius: 10px; /* Borde redondeado */
+    margin-top: 20px; /* Margen superior para separarlo de otros elementos */
+    overflow: hidden; /* Oculta el contenido que sobresale del cuadro */
+    float: right; /* Alinea el cuadro a la derecha */
+    max-width: 35%; /* Establece el ancho máximo del cuadro */
+    box-sizing: border-box; /* Incluye relleno y bordes en el ancho total */
 }
+
+.hotel-info-container h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.hotel-info-container p {
+    margin-bottom: 15px;
+    line-height: 1.4;
+    overflow: hidden; /* Oculta el contenido que sobresale del cuadro */
+    max-height: 90px; /* Establece la altura máxima por defecto */
+}
+
+#verMasBtn {
+    background-color: #D6AB7D;
+    color: #ffffff;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block; /* Muestra el botón como un bloque para ajustar el ancho automáticamente */
+    margin-top: 10px; /* Añade un espacio superior para separarlo del texto */
+}
+
+#verMasBtn:hover {
+    background-color: #553725;
+}
+
 /*--------------------------------------------------------------------------------------------------*/
 #redes-sociales-container {
     display: flex;
@@ -218,6 +248,52 @@ img#logo-footer {
 /* Cambia el color al pasar el mouse */
 .social-icon:hover {
     color: #f61212; /* Nuevo color al pasar el mouse */
+}
+/*-----------------------------------------------------------------------------*/
+/*Estilos para las amenidades en la secion de inicio*/
+#amenidades {
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos */
+    background-color: #E5C9AE; /* Color de fondo intercalado */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 10px; /* Borde redondeado */
+    margin-top: 20px; /* Margen superior para separarlo de otros elementos */
+}
+
+.amenidad {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos verticalmente */
+    color: #D6AB7D; /* Color del texto */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el icono */
+}
+
+.amenidad i {
+    font-size: 30px; /* Tamaño del icono */
+    margin-bottom: 10px; /* Espacio inferior entre el ícono y el texto */
+    transition: color 0.3s ease; /* Transición de color al pasar el mouse */
+}
+
+.amenidad p {
+    margin-top: 5px; /* Espacio superior entre el ícono y el texto */
+    font-size: 14px; /* Tamaño del texto */
+}
+
+/* Línea de división */
+.amenidad:not(:last-child) {
+    border-right: 1px solid #D6AB7D;
+}
+
+/* Centrar el icono horizontalmente */
+.amenidad i {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Cambio de color al pasar el mouse */
+.amenidad:hover i {
+    color: #E5C9AE; /* Cambia el color del ícono */
 }
 
 
@@ -388,7 +464,7 @@ img#logo-footer {
 /* Estilo para cada habitación */
 .habitacion {
     flex: 0 0 calc(33.33% - 10px); /* Establecer el ancho de cada habitación (33.33% del ancho total) con espacio entre ellas */
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco o el color que desees */
+    background-color: #e5c9aed1; /* Fondo blanco o el color que desees */
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px; /* Espacio inferior entre habitaciones */

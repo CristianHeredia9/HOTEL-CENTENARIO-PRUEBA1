@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-pzjw8H/lMrD9Vs6s5n9ZxPswa67iS90accPTvn8GC7f8Hr7cNmKn+Tt9kpk1xV5m" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-ezvjzl5o1SRexgGEJL4QlpJ4h9Fb4ou7wS8e3N5f8lzuAMLFKVTgFRjstZx4JVOt" crossorigin="anonymous">
+
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0" nonce="tu-valor-de-nonce"></script>
 
 </head>
@@ -36,11 +38,41 @@
             <p>Disfruta de una estancia relajante en nuestro hermoso hotel.</p>
         </div>
 
+        <div class="hotel-info-container" id="hotelInfoContainer">
+            <h2>Bienvenido a Hotel Centenario</h2>
+            <p id="infoText">
+                Somos Hotel Centenario, con más de 57 años en el mundo empresarial. Nuestro hotel es un lugar acogedor y único, ubicado a unas cuadras de la Plaza de Armas en una de las avenidas principales de la ciudad de Huacho, conocida como la capital de la Hospitalidad. Ofrecemos a nuestros visitantes la oportunidad de descubrir y vivir una experiencia inolvidable, proporcionando un fácil acceso hacia cualquier actividad y garantizando la seguridad de nuestros huéspedes. Además, contamos con el servicio de Saratoga Restaurante, donde ofrecemos una variedad de platos tradicionales. Disfrute de la variada y exquisita comida peruana, ya sea en la comodidad de su habitación o frente a nuestra terraza.
+            </p>
+            <button id="verMasBtn" onclick="verMas()">VER MÁS</button>
+        </div>
         <div id="redes-sociales-container">
             <div id="siguenos-texto">Síguenos en:</div>
             <a href="https://www.facebook.com/CentenarioHotelHuacho" target="_blank" class="social-icon facebook" rel="noopener"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/hotelcentenario_huacho/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="social-icon instagram" rel="noopener"><i class="fab fa-instagram"></i></a>
             <a href="https://www.tiktok.com/@hotelcentenariohuacho?is_from_webapp=1&sender_device=pc" target="_blank" class="social-icon tiktok" rel="noopener"><i class="fab fa-tiktok"></i></a>
+        </div>
+
+        <div id="amenidades">
+            <div class="amenidad">
+                <i class="fas fa-bed"></i>
+                <p>Cama 2 Plazas</p>
+            </div>
+            <div class="amenidad">
+                <i class="fas fa-tv"></i>
+                <p>TV LED</p>
+            </div>
+            <div class="amenidad">
+                <i class="fas fa-wifi"></i>
+                <p>Wifi Gratis</p>
+            </div>
+            <div class="amenidad">
+                <i class="fas fa-hotel"></i>
+                <p>Room Service</p>
+            </div>
+            <div class="amenidad">
+                <i class="fas fa-hot-tub"></i>
+                <p>Agua Caliente</p>
+            </div>
         </div>
         
         <div id="video-container">
@@ -64,61 +96,69 @@
         <h2>Nuestras habitaciones</h2>
         <p>Ofrecemos una variedad de habitaciones cómodas y elegantes.</p>
         <div class="habitaciones-container">
-            <!-- Habitación Superior -->
+            <!-- Habitación Individual -->
             <div class="habitacion">
+                <i class="fas fa-user"></i> <!-- Icono de persona -->
                 <img src="fotos/Individual.jpg" alt="Habitación Individual">
                 <h3>Habitaciones Individuales</h3>
-                <p>1 Queen</p>
-                <p>1 Jacuzzi</p>
-                <p>Las habitaciones están situadas entre los pisos 2 y 9 y cuentan con una cama tamaño king o dos camas dobles.</p>
+                <p><i class="fas fa-male"></i> 1 persona</p> <!-- Icono de persona -->
+                <p><i class="fas fa-bed"></i> Cama de 2 plazas</p> <!-- Icono de cama -->
+                <p>Comodas habitaciones cuenta con cable tv, baño individual, agua caliente 24h, servico a la habitacion.</p>
                 <button class="reservar-button">Reservar</button>
             </div>
 
-            <!-- Habitación Ejecutiva -->
+            <!-- Habitación Matrimonial -->
             <div class="habitacion">
+                <i class="fas fa-users"></i> <!-- Icono de personas -->
                 <img src="fotos/1.png" alt="Habitación Matrimonial">
                 <h3>Habitaciones Matrimoniales</h3>
-                <p>1 Queen</p>
-                <p>1 Jacuzzi</p>
-                <p>Las habitaciones están situadas entre los pisos 2 y 9 y cuentan con una cama tamaño king o dos camas dobles.</p>
+                <p><i class="fas fa-male"></i><i class="fas fa-female"></i> 2 personas</p> <!-- Iconos de personas -->
+                <p><i class="fas fa-bed"></i> Cama de 2 plazas</p> <!-- Icono de cama -->
+                <p>Las habitaciones cuentan con cable tv, tv 50", baño, agua caliente 24h, servicio a la habitación.</p>
                 <button class="reservar-button">Reservar</button>
             </div>
 
-            <!-- Habitación Ejecutiva Vip -->
+            <!-- Habitación Matrimonial delux -->
             <div class="habitacion">
-                <img src="fotos/IMG_6.png" alt="Habitación Matrimonial Delux">
-                <h3>Habitaciones Matrimoniales Delux</h3>
-                <p>1 Queen</p>
-                <p>1 Jacuzzi</p>
-                <p>Las habitaciones están situadas entre los pisos 2 y 9 y cuentan con una cama tamaño king o dos camas dobles.</p>
+                <i class="fas fa-users"></i> <!-- Icono de personas -->
+                <img src="fotos/IMG_6.png" alt="Habitación Matrimonial Deluxe">
+                <h3>Habitaciones Matrimoniales Deluxe</h3>
+                <p><i class="fas fa-male"></i><i class="fas fa-female"></i> 2 personas</p> <!-- Iconos de personas -->
+                <p><i class="fas fa-bed"></i> Cama de 2 plazas</p> <!-- Icono de cama -->
+                <p>Amplias habitaciones con cable tv, tv 50", puertos usb, agua caliente, baño, servicio a la habitación.</p>
                 <button class="reservar-button">Reservar</button>
             </div>
-
 
             <!-- Habitación Doble -->
             <div class="habitacion">
+                <i class="fas fa-users"></i> <!-- Icono de personas -->
                 <img src="fotos/3.png" alt="Habitación Doble">
                 <h3>Habitaciones dobles</h3>
-                <p>2 Camas Queen</p>
-                <p>1 Jacuzzi</p>
+                <p><i class="fas fa-male"></i><i class="fas fa-female"></i> 2 Camas 2 plazas y 1 plaza</p> <!-- Iconos de personas -->
+                <p><i class="fas fa-users"></i> 3 personas</p> <!-- Icono de personas -->
                 <p>Las habitaciones dobles son amplias y cómodas, ideales para familias o grupos.</p>
                 <button class="reservar-button">Reservar</button>
             </div>
 
-            <!-- Habitación Familiar -->
+            <!-- Habitación Triples -->
             <div class="habitacion">
+                <i class="fas fa-users"></i> <!-- Icono de personas -->
                 <img src="fotos/4.png" alt="Habitación Triple">
                 <h3>Habitaciones Triples</h3>
-                <p>1 Cama King, 2 Camas Queen</p>
-                <p>Varias habitaciones familiares están comunicadas entre sí para mayor comodidad.</p>
+                <p><i class="fas fa-male"></i><i class="fas fa-female"></i> 1 Cama 2 Plazas, 2 Camas Plaza y Media</p> <!-- Iconos de personas -->
+                <p><i class="fas fa-users"></i> 4 personas</p> <!-- Icono de personas -->
+                <p>Habitaciones amplias para sentirse en familia como en casa.</p>
                 <button class="reservar-button">Reservar</button>
             </div>
 
-            <!-- Otra habitación adicional -->
+            <!-- Habitacion suite -->
             <div class="habitacion">
+                <i class="fas fa-user"></i> <!-- Icono de persona -->
                 <img src="fotos/IMG_49263.png" alt="Habitaciones Suites">
                 <h3>Habitaciones Suites</h3>
-                <p>Disfruta de la mejor comodidad</p>
+                <p><i class="fas fa-male"></i><i class="fas fa-female"></i> 1 Cama 2 Plazas</p> <!-- Iconos de personas -->
+                <p><i class="fas fa-user"></i> 2 personas</p> <!-- Icono de persona -->
+                <p>Aplias habitaciones con una pequeña sala en la entrada para compartir momentos agradables.</p>
                 <button class="reservar-button">Reservar</button>
             </div>
         </div>

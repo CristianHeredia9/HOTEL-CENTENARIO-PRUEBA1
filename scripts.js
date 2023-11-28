@@ -14,6 +14,20 @@ function mostrarSeccion(seccionId) {
     }
     
 }
+////////////////////////////////////////////////////////////////////////////////////
+//Scripts para el cuadro de texto de la pagina de Inicio
+function verMas() {
+    var infoText = document.getElementById("infoText");
+    var verMasBtn = document.getElementById("verMasBtn");
+
+    if (infoText.style.maxHeight) {
+        infoText.style.maxHeight = null;
+        verMasBtn.textContent = "VER MÁS";
+    } else {
+        infoText.style.maxHeight = infoText.scrollHeight + "px";
+        verMasBtn.textContent = "VER MENOS";
+    }
+}
 ///////////////////////////////////////////////////////////////////////////////////
 //script para el video comercial de la pagina de inicio
 window.fbAsyncInit = function() {
