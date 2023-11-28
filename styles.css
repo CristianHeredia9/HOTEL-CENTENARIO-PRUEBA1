@@ -125,22 +125,25 @@ img#logo-footer {
 }
 
 /* Estilo para el contenedor del video de Facebook */
-.fb-video-container {
+
+#fb-video-container {
     position: absolute;
-    top: 50%; /* Coloca el elemento en el 50% de la altura del contenedor padre */
-    left: 30%; /* Coloca el elemento en el 50% del ancho del contenedor padre */
-    transform: translate(-50%, -50%); /* Centra el elemento correctamente */
-    width: 70%; /* Ajusta el ancho según sea necesario */
-    max-width: 800px; /* Ajusta el ancho máximo según sea necesario */
-    z-index: 2; /* Asegura que el video esté sobre el carrusel */
+    top: 10%; /* Ajusta el valor según sea necesario para acercar el video al texto o la barra de navegación */
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    max-width: 800px;
+    z-index: 2;
 }
+
 /* Estilos adicionales para dispositivos pequeños */
 @media screen and (max-width: 768px) {
-    .fb-video-container {
-        width: 90%; /* Ajusta el ancho para pantallas pequeñas */
-        left: 5%; /* Ajusta la posición a la izquierda para pantallas pequeñas */
+    #fb-video-container {
+        width: 90%;
+        left: 5%;
     }
 }
+
 
 /*-----------------------------------------------------------------*/
 /* Estilo para el carrusel de la seccion de inicio  */
