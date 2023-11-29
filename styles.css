@@ -72,7 +72,7 @@ nav a {
 
 /* Estilo para las secciones */
 section {
-    background-color: #e5d4c365;
+    background-color: #e5d4c32c;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -80,7 +80,7 @@ section {
 
 /* Estilo para el pie de página */
 footer {
-    background-color: #553725;
+    background-color: #553725c7;
     color: white;
     text-align: center;
     padding: 36px;
@@ -336,55 +336,63 @@ img#logo-footer {
     position: relative;
     padding: 20px;
     border-radius: 20px;
-    width: 100%; /* Cambiado de anchos fijos a 100% */
+    width: 80%; /* Modificado de 100% a 80% para que sea un poco más pequeño */
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.608);
-    z-index: 1; /* Coloca el contenido del carrusel en la parte superior */
+    background-color: #55372567;
+    z-index: 1;
+    text-align: center; /* Centra el contenido */
   }
+
+  #reserva h2 {
+    font-size: 24px;
+    text-decoration: underline;
+    margin-bottom: 10px; /* Añadido espacio entre el título y el párrafo */
+    color: #ffffff;
+}
+
+#reserva p {
+    font-size: 16px; /* Ajusta el tamaño del párrafo según tus preferencias */
+    line-height: 1.5; /* Ajusta el espacio entre líneas para mejorar la legibilidad */
+    margin-bottom: 20px; /* Añadido espacio al final del párrafo */
+    color: #ffffff;
+}
     
 
 /* Estilos para la sección de reserva */
 .reserva-container {
     padding: 20px;
     border-radius: 20px;
-    background-color: #E5C9AE;
     max-width: 500px;
     margin: 0 auto;
+
 }
 /* Estilos adicionales para el formulario de reserva */
 #reserva-form {
-    background-color: #D6AB7D;
+    background-color: #482919c9;;
     padding: 20px;
     border-radius: 10px;
     margin: 20px auto;
     max-width: 400px;
-}
-
-
-#reserva h2 {
-    font-size: 24px;
-    text-decoration: underline;
-}
-
-#reserva p {
-    margin: 10px 0;
-    font-weight: bold;
+    color: #ffffff;
 }
 
 #reserva select,
 #reserva input {
     width: 100%;
-    padding: 5px;
+    padding: 8px;
     margin: 5px 0;
+    border: 1px solid #fffdfd00; /* Añadido borde alrededor de los campos */
+    border-radius: 10px; /* Borde redondeado */
 }
 
 #reserva button {
-    background-color: #ffffff;
-    color: rgb(6, 6, 6);
+    background-color: #E5C9AE;
+    color: rgb(0, 0, 0);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 /* Estilo para el botón de reservación */
@@ -396,7 +404,7 @@ img#logo-footer {
 .reservacion-button a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ccd5ae; /* Color de fondo del botón */
+    background-color: #E5C9AE; /* Color de fondo del botón */
     color: #282828; /* Color del texto del botón */
     text-decoration: none; /* Quita el subrayado del enlace */
     border-radius: 5px; /* Borde redondeado */
@@ -405,7 +413,7 @@ img#logo-footer {
 }
 
 .reservacion-button a:hover {
-    background-color: #a5a58d; /* Cambia el color al pasar el mouse */
+    background-color: #9B744A; /* Cambia el color al pasar el mouse */
 }
 /*--------------------------------------------------------------------------------------------------------*/
 #servicios {
