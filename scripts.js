@@ -104,6 +104,8 @@ document.addEventListener("DOMContentLoaded", function () {
 // Mostrar la página de inicio por defecto al cargar la página
 mostrarInicioPorDefecto();
 
+
+
 //////////////////////////////////////////////////////////////////////////////////////
 //javaScript para el carrusel de imagenes de la seccion reservar//
 document.addEventListener("DOMContentLoaded", function () {
@@ -120,6 +122,20 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(mostrarSiguienteImagen, 4000);
   });
   
+//////////////////////////////////////////////////////////////////////////////////////
+//javaScript para el carrusel de imagenes de la seccion HABITACIONES//
+document.addEventListener("DOMContentLoaded", function () {
+    const carouselItemsHabitaciones = document.querySelectorAll(".carrusel-item");
+    let currentIndexHabitaciones = 0;
+
+    function mostrarSiguienteImagenHabitaciones() {
+        carouselItemsHabitaciones[currentIndexHabitaciones].classList.remove("active");
+        currentIndexHabitaciones = (currentIndexHabitaciones + 1) % carouselItemsHabitaciones.length;
+        carouselItemsHabitaciones[currentIndexHabitaciones].classList.add("active");
+    }
+
+    setInterval(mostrarSiguienteImagenHabitaciones, 4000);
+});
 
 // JavaScript para manejar la selección de habitación, cálculo de precio, validación del formulario, envío y confirmación
 document.addEventListener("DOMContentLoaded", function () {

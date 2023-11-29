@@ -299,6 +299,35 @@ img#logo-footer {
     color: #E5C9AE; /* Cambia el color del ícono */
 }
 
+/*------------------------------------------------------------------------------------------*/
+#carousel-container-habitaciones {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: carousel-habitaciones 30s infinite;
+    background-size: cover;
+}
+
+@keyframes carousel-habitaciones {
+    0%, 100% {
+        background-image: url('fotos/IMG_49266.png');
+    }
+    20% {
+        background-image: url('fotos/IMG_49269.png');
+    }
+    40% {
+        background-image: url('fotos/IMG_5157.png');
+    }
+    60% {
+        background-image: url('fotos/IMG_6.png');
+    }
+    80% {
+        background-image: url('fotos/2.png');
+    }
+}
 
 /*------------------------------------------------------------------------------------------*/
 /*Estilos para el carrusel de imagenes de fondo de la seccion reservar*/
@@ -463,30 +492,65 @@ img#logo-footer {
     margin-bottom: 10px; /* Agrega un margen inferior para separar el icono del título */
 }
 
-
-
+/*-----------------------------------------------------------------------------------------------*/
 /* Estilo para el contenedor de habitaciones */
 .habitaciones-container {
     display: flex;
-    justify-content: space-between; /* Colocar las habitaciones equidistantes */
-    flex-wrap: wrap; /* Permitir que las habitaciones se envuelvan si el espacio es insuficiente */
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* Estilo para cada habitación */
 .habitacion {
-    flex: 0 0 calc(33.33% - 10px); /* Establecer el ancho de cada habitación (33.33% del ancho total) con espacio entre ellas */
-    background-color: #e5c9aed1; /* Fondo blanco o el color que desees */
-    padding: 20px;
+    width: 300px; /* Ajuste del ancho de la habitación */
+    margin: 15px;
+    background-color: #e5c9aed1;
+    padding: 15px;
     border-radius: 10px;
-    margin-bottom: 20px; /* Espacio inferior entre habitaciones */
-    box-sizing: border-box; /* Incluir relleno en el ancho total */
-}
-/* Estilo para las imágenes de las habitaciones */
-.habitacion img {
-    max-width: 100%; /* Establece el ancho máximo al 100% del contenedor */
-    height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
+/* Estilo para la imagen */
+.habitacion img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Ajuste del tamaño máximo de la imagen */
+    border-radius: 10px;
+}
+
+/* Estilo para el contenido de texto */
+.habitacion .contenido-texto {
+    flex: 1;
+    margin-left: 15px; /* Ajuste del margen izquierdo */
+}
+
+.habitacion h3 {
+    font-size: 20px; /* Ajuste del tamaño del título */
+    margin-bottom: 10px; /* Ajuste del margen inferior del título */
+}
+
+.habitacion p {
+    margin-bottom: 10px; /* Ajuste del margen inferior del párrafo */
+}
+
+.habitacion i {
+    font-size: 24px; /* Ajuste del tamaño del icono */
+    margin-right: 5px; /* Ajuste del margen derecho entre el icono y el texto */
+}
+
+.habitacion:hover,
+.habitacion:focus {
+    transform: scale(1.05);
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------------------------*/
 /* Estilo para el contenedor de restaurante */
 .restaurante-container {
     display: flex;
