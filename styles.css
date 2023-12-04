@@ -456,40 +456,88 @@ img#logo-footer {
     background-color: rgba(80, 223, 55, 0.1);
 }
 
-/* Estilo para los servicios */
-.servicios-contenido {
+/* Nuevo contenedor para los servicios */
+#servicios-container {
     text-align: center;
     background-color: rgba(237, 234, 234, 0.592);
-    padding: 20px 10px; /* Ajusta el padding horizontal */
+    padding: 20px 10px; /* Ajuste del padding horizontal */
     border-radius: 20px;
     margin-bottom: 10px;
-    width: 100%; /* Ajusta el ancho del cuadro */
+    width: 100%; /* Ajuste del ancho del cuadro */
     margin: 0 auto; /* Centra el cuadro en el contenedor */
 }
 
-.servicio {
-    width: 25%; /* Ajusta el ancho de cada servicio */
-    margin: 10px;
-    display: inline-block;
-    vertical-align: top;
+/* Ajustes para mostrar los servicios en tres filas de tres columnas */
+#servicios-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ajusta el espacio entre columnas */
+}
+
+.servicio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(33.33% - 20px); /* Ajusta el ancho de cada servicio y el espacio entre columnas */
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.servicio-item:hover i {
+    transform: scale(1.2); /* Ajusta el tamaño al pasar el mouse */
+}
+
+.servicio-item i {
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: #D6AB7D;
+    transition: transform 0.3s ease;
+}
+
+.servicio-item span {
     text-align: center;
-    padding: 10px;
 }
 
-.servicio h3 {
-    font-size: 16px;
-    margin: 5px 0;
+/* Ajustes para el cuadro de texto */
+#servicios-container {
+    max-width: 800px; /* Ajusta el ancho máximo del contenedor de servicios */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    padding: 20px; /* Ajusta el espaciado interno del contenedor */
+    background-color: #e5d4c3a8;
+    border-radius: 20px;
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* Añadir estilos adicionales para el carrusel de imágenes de fondo */
+#carousel-container-servicios {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: carousel-servicios 30s infinite;
+    background-size: cover;
 }
 
-.servicio p {
-    font-weight: normal;
-    margin: 5px 0;
-}
-
-.servicio i {
-    font-size: 24px; /* Ajusta el tamaño del icono según tus preferencias */
-    color: #333; /* Ajusta el color del icono */
-    margin-bottom: 10px; /* Agrega un margen inferior para separar el icono del título */
+@keyframes carousel-servicios {
+    0%, 100% {
+        background-image: url('fotos/IMG_49266.png');
+    }
+    20% {
+        background-image: url('fotos/IMG_49269.png');
+    }
+    40% {
+        background-image: url('fotos/IMG_5157.png');
+    }
+    60% {
+        background-image: url('fotos/IMG_6.png');
+    }
+    80% {
+        background-image: url('fotos/2.png');
+    }
 }
 
 /*-----------------------------------------------------------------------------------------------*/
