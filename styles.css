@@ -463,17 +463,15 @@ img#logo-footer {
     padding: 20px 10px; /* Ajuste del padding horizontal */
     border-radius: 20px;
     margin-bottom: 10px;
-    width: 100%; /* Ajuste del ancho del cuadro */
+    width: 80%; /* Ajuste del ancho del cuadro */
     margin: 0 auto; /* Centra el cuadro en el contenedor */
 }
 
 /* Ajustes para mostrar los servicios en tres filas de tres columnas */
 #servicios-list {
-    list-style: none;
-    padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Ajusta el espacio entre columnas */
+    justify-content: space-around;
 }
 
 .servicio-item {
