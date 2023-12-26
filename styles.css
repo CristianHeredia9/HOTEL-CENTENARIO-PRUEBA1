@@ -625,6 +625,10 @@ img#logo-footer {
     max-width: 40%;
     color: #282828;
     text-align: left;
+    padding: 20px; /* Añadido para espacio interno */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilo para el título del restaurante */
@@ -666,6 +670,13 @@ img#logo-footer {
     align-items: center;
 }
 
+/* Estilo para los íconos en los párrafos */
+.restaurante i {
+    margin-right: 5px;
+    font-size: 16px;
+    color: #ff8c42; /* Color naranja, puedes cambiarlo */
+}
+
 /* Estilo para el carrusel de fondo de la sección de restaurante */
 #carousel-container-restaurante {
     position: fixed;
@@ -676,24 +687,6 @@ img#logo-footer {
     z-index: -1;
     animation: carousel-restaurante 30s infinite;
     background-size: cover;
-}
-
-@keyframes carousel-restaurante {
-    0%, 100% {
-        background-image: url('fotos/IMG_49266.png');
-    }
-    20% {
-        background-image: url('fotos/IMG_49269.png');
-    }
-    40% {
-        background-image: url('fotos/IMG_5157.png');
-    }
-    60% {
-        background-image: url('fotos/IMG_6.png');
-    }
-    80% {
-        background-image: url('fotos/2.png');
-    }
 }
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
