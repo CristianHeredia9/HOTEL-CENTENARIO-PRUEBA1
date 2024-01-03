@@ -597,6 +597,28 @@ img#logo-footer {
 
 
 /*-----------------------------------------------------------------------------------------------*/
+/* Estilo para la sección del restaurante */
+#restaurante {
+    background-color: #f7f7f767;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Estilo para el título del restaurante SARATOGA */
+#restaurante h2 {
+    color: #241a1a;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el párrafo de la sección del restaurante */
+#restaurante p {
+    color: #210101;
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
 /* Estilo para cada restaurante */
 .restaurante {
     position: relative;
@@ -604,7 +626,7 @@ img#logo-footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #e5c9aeab;
+    background-color: #e5c9aec9;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -622,32 +644,13 @@ img#logo-footer {
 
 /* Estilo para el contenido de texto en cada restaurante */
 .restaurante .contenido-texto {
-    max-width: 40%;
+    max-width: 60%; /* Ajusta el ancho del contenido-texto según tus preferencias */
     color: #282828;
     text-align: left;
-    padding: 20px; /* Añadido para espacio interno */
-    background-color: #fff;
+    padding: 20px;
+    background-color: #debea299;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilo para el título del restaurante */
-.restaurante h3 {
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-    margin: 0;
-    color: #fff;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-/* Mostrar el título al pasar el mouse */
-.restaurante:hover h3 {
-    opacity: 1;
 }
 
 /* Efecto de escala en la imagen al pasar el mouse */
@@ -657,7 +660,7 @@ img#logo-footer {
 
 /* Estilo para los cuadros de texto de cada restaurante */
 .restaurante .texto-container {
-    background-color: #fff;
+    background-color: #ffffffb5;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -674,7 +677,7 @@ img#logo-footer {
 .restaurante i {
     margin-right: 5px;
     font-size: 16px;
-    color: #ff8c42; /* Color naranja, puedes cambiarlo */
+    color: #ff8c42;
 }
 
 /* Estilo para el carrusel de fondo de la sección de restaurante */
@@ -687,6 +690,31 @@ img#logo-footer {
     z-index: -1;
     animation: carousel-restaurante 30s infinite;
     background-size: cover;
+}
+
+/* Añadir clase específica para el segundo restaurante y moverlo a la derecha */
+.restaurante:nth-child(2) .contenido-texto {
+    max-width: 60%; /* Ajusta el ancho según tus preferencias */
+    margin-left: auto; /* Mover a la derecha */
+    order: -1; /* Cambiar el orden para que la imagen aparezca primero */
+}
+
+@keyframes carousel-restaurante {
+    0%, 100% {
+        background-image: url('fotos/IMG_49266.png');
+    }
+    20% {
+        background-image: url('fotos/IMG_49269.png');
+    }
+    40% {
+        background-image: url('fotos/IMG_5157.png');
+    }
+    60% {
+        background-image: url('fotos/IMG_6.png');
+    }
+    80% {
+        background-image: url('fotos/2.png');
+    }
 }
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
