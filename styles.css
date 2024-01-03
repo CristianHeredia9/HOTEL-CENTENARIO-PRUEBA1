@@ -717,6 +717,26 @@ img#logo-footer {
     }
 }
 
+/* Estilos para pantallas más pequeñas (ej. tabletas y móviles) */
+@media screen and (max-width: 768px) {
+    /* Ajuste el tamaño del título */
+    #restaurante h2 {
+        font-size: 2em;
+    }
+
+    /* Ajuste el tamaño del párrafo */
+    #restaurante p {
+        font-size: 1em;
+    }
+
+    /* Ajuste el tamaño de la fuente en el contenido de texto */
+    .restaurante .contenido-texto {
+        font-size: 14px;
+    }
+
+    /* Otros ajustes según sea necesario */
+}
+
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 /*estilos para el carrusel de imagenes */
