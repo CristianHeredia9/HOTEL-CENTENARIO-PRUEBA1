@@ -626,7 +626,7 @@ img#logo-footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #e5c9aec9;
+    background-color: #e5c9ae85;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -648,7 +648,7 @@ img#logo-footer {
     color: #282828;
     text-align: left;
     padding: 20px;
-    background-color: #debea299;
+    background-color: #debea2c0;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -660,7 +660,7 @@ img#logo-footer {
 
 /* Estilo para los cuadros de texto de cada restaurante */
 .restaurante .texto-container {
-    background-color: #ffffffb5;
+    background-color: #c1906d68;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
