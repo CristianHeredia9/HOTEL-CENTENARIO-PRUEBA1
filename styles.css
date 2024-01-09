@@ -776,54 +776,90 @@ img#logo-footer {
 /*-----------------------------------------------------------------------------------------------*/
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-/* Estilos para la sección de galería */
+/* Estilos para la sección de Galería */
 #galeria {
     text-align: center;
-    padding: 50px 20px;
-    background-color: #f2f2f2;
+    padding: 50px 0;
 }
 
-#carrusel-habitaciones,
-#carrusel-restaurantes,
-#carrusel-eventos {
-    margin-top: 30px;
+#galeria h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#galeria p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
 }
 
 .carrusel-container {
-    width: 100%; /* Ajustado al 100% */
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
-    border: 1px solid #ccc; /* Borde para visualizar mejor */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .carrusel {
     display: flex;
+    animation: moveCarrusel 10s infinite alternate; /* Agregamos una animación */
     transition: transform 0.5s ease-in-out;
 }
 
 .carrusel-items {
     display: flex;
-    width: 1800px; /* Ajustado para permitir espacio para todas las imágenes */
 }
 
 .carrusel-item {
+    width: 250px; /* Ancho base para pantallas más grandes */
+    height: 150px; /* Altura fija */
     margin-right: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.carrusel-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .carrusel-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajustamos la imagen para cubrir completamente el contenedor */
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Flechas de navegación del carrusel (puedes personalizarlas) */
-.carrusel-prev,
-.carrusel-next {
-    cursor: pointer;
-    font-size: 24px;
-    margin-top: 50px;
-    color: #333;
+.carrusel-item img:hover {
+    transform: scale(1.1);
 }
 
-/* Puedes agregar más estilos según tus preferencias */
+/* Animación para mover el carrusel */
+@keyframes moveCarrusel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(20px); /* Mueve el carrusel hacia la derecha */
+    }
+}
+
+/* Estilos para hacer la galería responsive */
+@media (max-width: 1200px) {
+    .carrusel-item {
+        width: 200px; /* Ajuste de ancho para pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    .carrusel-item {
+        width: 100%; /* Ancho completo para dispositivos móviles */
+        height: 200px; /* Altura ajustada para dispositivos móviles */
+        margin-right: 0;
+    }
+}
