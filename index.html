@@ -96,11 +96,10 @@
     
     <section id="habitaciones">
         
-        <h2>Nuestras habitaciones</h2>
-        <p>Ofrecemos una variedad de habitaciones cómodas y elegantes.</p>
-        
-        <div id="carousel-container-habitaciones" class="carrusel-container">
-        </div>
+        <h2 class="habitaciones-titulo">Nuestras habitaciones</h2>
+        <p class="habitaciones-descripcion">Ofrecemos una variedad de habitaciones cómodas y elegantes.</p>
+
+        <div id="carousel-container-habitaciones"></div>
         <div class="habitaciones-container">
             <!-- Habitación Individual -->
             <div class="habitacion">
@@ -179,7 +178,7 @@
             <!-- alta cocina -->
             <div class="restaurante">
                 <img src="fotos/IMG_4926.png" alt="Alta Cocina Peruana">
-                <h3>「 ALTA COCINA PERUANA 」 </h3>
+                <h3>ALTA COCINA PERUANA</h3>
                 <div class="contenido-texto">
                     <div class="texto-container">
                         <p><i class="fas fa-check"></i> Atención</p>
@@ -191,7 +190,7 @@
             </div>
             <!-- gastronomia -->
             <div class="restaurante">
-                <h3>「VARIEDAD DE SABORES」</h3>
+                <h3></h3>VARIEDAD DE SABORES</h3>
                 <div class="contenido-texto">
                     <div class="texto-container">
                         <p><i class="fas fa-globe-americas"></i> Sabores Nacionales</p>
@@ -204,7 +203,7 @@
             <!-- Cocteleria -->
             <div class="restaurante">
                 <img src="fotos/IMG_49266.png" alt="Coctelería Peruana">
-                <h3> 「 COCTELERÍA PERUANA 」 </h3>
+                <h3>COCTELERÍA PERUANA</h3>
                 <div class="contenido-texto">
                     <div class="texto-container">
                         <p><i class="fas fa-glass-martini-alt"></i> Barman</p>
@@ -269,49 +268,92 @@
     <section id="galeria">
         <h2>Galería</h2>
         <p>Guarda y recuerda siempre tus mejores momentos.</p>
-
-        <div class="carrusel">
-            <div class="carrusel-items">
-              <div class="carrusel-item">
-                <img src="fotos/IMG_5157.png" alt="" />
-              </div>
-              <div class="carrusel-item">
-                <img src="fotos/IMG_49269.png" alt="" />
-              </div>
-              <div class="carrusel-item">
-                <img src="fotos/IMG_49266.png" alt="" />
-              </div>
-              <div class="carrusel-item">
-                <img src="fotos/IMG_4926.png" alt="" />
-              </div>
-              <div class="carrusel-item">
-                <img src="fotos/1.png" alt="" />
-              </div>
-              <div class="carrusel-item">
-                <img src="fotos/2.png" alt="" />
-              </div>
-              <div class="carrusel-item">
-                <img src="fotos/3.png" alt="" />
-              </div>
-              <div class="carrusel-item">
-                <img src="fotos/Individual.jpg" alt="" />
-              </div>
-              <div class="carrusel-item">
-                <img src="fotos/IMG_6.png" alt="" />
-              </div>
-              <div class="carrusel-item">
-                <img src="fotos/IMG_49263.png" alt="" />
-              </div>
-              <div class="carrusel-item">
-                <img src="fotos/IMG_6.png" alt="" />
-              </div>
-              <div class="carrusel-item">
-                <img src="fotos/IMG_49263.png" alt="" />
-              </div>
+    
+        <!-- Carrusel 1: Habitaciones -->
+        <div class="carrusel-container" id="carrusel-habitaciones">
+            <div class="carrusel">
+                <div class="carrusel-items">
+                    <div class="carrusel-item">
+                        <img src="fotos/IMG_5157.png" alt="" />
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="fotos/IMG_49269.png" alt="" />
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="fotos/IMG_49266.png" alt="" />
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="fotos/IMG_4926.png" alt="" />
+                    </div>
+                    <!-- Nuevas imágenes agregadas -->
+                    <div class="carrusel-item">
+                        <img src="fotos/20230628_152042.jpg" alt="" />
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="fotos/20230628_153755.jpg" alt="" />
+                    </div>
+                    <!-- Fin de las nuevas imágenes -->
+                </div>
             </div>
         </div>
-
+    
+        <!-- Carrusel 2: Restaurantes -->
+        <div class="carrusel-container" id="carrusel-restaurantes">
+            <div class="carrusel">
+                <div class="carrusel-items">
+                    <div class="carrusel-item">
+                        <img src="fotos/1.png" alt="" />
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="fotos/2.png" alt="" />
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="fotos/3.png" alt="" />
+                    </div>
+                    <!-- Nuevas imágenes agregadas -->
+                    <div class="carrusel-item">
+                        <img src="fotos/IMG_5108.png" alt="" />
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="fotos/IMG_51572.png" alt="" />
+                    </div>
+                    <!-- Fin de las nuevas imágenes -->
+                </div>
+            </div>
+        </div>
+    
+        <!-- Carrusel 3: Eventos -->
+        <div class="carrusel-container" id="carrusel-eventos">
+            <div class="carrusel">
+                <div class="carrusel-items">
+                    <div class="carrusel-item">
+                        <img src="fotos/Individual.jpg" alt="" />
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="fotos/IMG_6.png" alt="" />
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="fotos/IMG_49263.png" alt="" />
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="fotos/IMG_6.png" alt="" />
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="fotos/IMG_49263.png" alt="" />
+                    </div>
+                    <!-- Nuevas imágenes agregadas -->
+                    <div class="carrusel-item">
+                        <img src="fotos/20230628_152042.jpg" alt="" />
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="fotos/20230628_153755.jpg" alt="" />
+                    </div>
+                    <!-- Fin de las nuevas imágenes -->
+                </div>
+            </div>
+        </div>
     </section>
+    
 
     <section id="reservar">
 

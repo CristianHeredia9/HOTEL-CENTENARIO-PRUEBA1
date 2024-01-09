@@ -105,23 +105,6 @@ document.addEventListener("DOMContentLoaded", function () {
 mostrarInicioPorDefecto();
 
 
-
-//////////////////////////////////////////////////////////////////////////////////////
-//javaScript para el carrusel de imagenes de la seccion reservar//
-document.addEventListener("DOMContentLoaded", function () {
-    const carouselImages = document.querySelectorAll(".carousel-image");
-    let currentIndex = 0;
-  
-    function mostrarSiguienteImagen() {
-      carouselImages[currentIndex].classList.remove("active");
-      currentIndex = (currentIndex + 1) % carouselImages.length;
-      carouselImages[currentIndex].classList.add("active");
-    }
-  
-    // Cambia la imagen cada 4 segundos
-    setInterval(mostrarSiguienteImagen, 4000);
-  });
-  
 //////////////////////////////////////////////////////////////////////////////////////
 //javaScript para el carrusel de imagenes de la seccion HABITACIONES//
 document.addEventListener("DOMContentLoaded", function () {
@@ -298,32 +281,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 //scripts para el carrusel de imagenes de la seccion galeria 
-const carrusel = document.querySelector(".carrusel-items");
-
-let maxScrollLeft = carrusel.scrollWidth - carrusel.clientWidth;
-let intervalo = null;
-let step = 1;
-const start = () => {
-  intervalo = setInterval(function () {
-    carrusel.scrollLeft = carrusel.scrollLeft + step;
-    if (carrusel.scrollLeft === maxScrollLeft) {
-      step = step * -1;
-    } else if (carrusel.scrollLeft === 0) {
-      step = step * -1;
-    }
-  }, 10);
-};
-
-const stop = () => {
-  clearInterval(intervalo);
-};
-
-carrusel.addEventListener("mouseover", () => {
-  stop();
-});
-
-carrusel.addEventListener("mouseout", () => {
-  start();
-});
-
-start();

@@ -509,18 +509,90 @@ img#logo-footer {
 }
 
 /*-----------------------------------------------------------------------------------------------*/
-/* Estilo para el contenedor de habitaciones */
+/* Estilo para el carrusel de fondo de la sección de habitaciones */
+#carousel-container-habitaciones {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: carousel-habitaciones 30s infinite;
+    background-size: cover;
+}
+
+@keyframes carousel-habitaciones {
+    0%, 100% {
+        background-image: url('fotos/IMG_49266.png');
+    }
+    20% {
+        background-image: url('fotos/IMG_49269.png');
+    }
+    40% {
+        background-image: url('fotos/IMG_5157.png');
+    }
+    60% {
+        background-image: url('fotos/IMG_6.png');
+    }
+    80% {
+        background-image: url('fotos/2.png');
+    }
+}
+
+/* Estilo para la sección de habitaciones */
 .habitaciones-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+/* Estilo para el título "Nuestras habitaciones" */
+.habitaciones-titulo {
+    font-size: 3em; /* Tamaño del título */
+    color: #f3e2d1; /* Color del texto */
+    margin-bottom: 20px; /* Espaciado inferior */
+    text-align: center; /* Centrar el texto */
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    font-weight: bold; /* Texto en negrita */
+    text-shadow: 2px 2px 4px rgba(17, 14, 14, 0.786); /* Sombra del texto */
+}
+
+/* Estilo para el párrafo "Ofrecemos una variedad..." */
+.habitaciones-descripcion {
+    font-size: 1.2em; /* Tamaño del texto */
+    color: #ffffff; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    max-width: 800px; /* Ancho máximo del párrafo */
+    margin: 0 auto 40px auto; /* Centrar el párrafo en el contenedor y agregar espacio inferior */
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+}
+
+/* Estilo para una animación sutil en el título */
+.habitaciones-titulo:hover {
+    transform: scale(1.1); /* Cambio de escala al pasar el mouse */
+    color: #f6f2ee; /* Cambio de color al pasar el mouse */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+/* Estilo para un borde alrededor del título al pasar el mouse */
+.habitaciones-titulo:hover::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #fbcb9a;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+
 /* Estilo para cada habitación */
 .habitacion {
     width: 300px; /* Ajuste del ancho de la habitación */
     margin: 15px;
-    background-color: #e5c9aed1;
+    background-color: #f4ca9dc8;
     padding: 15px;
     border-radius: 10px;
     box-sizing: border-box;
@@ -562,35 +634,7 @@ img#logo-footer {
 .habitacion:focus {
     transform: scale(1.05);
 }
-/*------------------------------------------------------------------------------------------*/
-#carousel-container-habitaciones {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    animation: carousel-habitaciones 30s infinite;
-    background-size: cover;
-}
 
-@keyframes carousel-habitaciones {
-    0%, 100% {
-        background-image: url('fotos/IMG_49266.png');
-    }
-    20% {
-        background-image: url('fotos/IMG_49269.png');
-    }
-    40% {
-        background-image: url('fotos/IMG_5157.png');
-    }
-    60% {
-        background-image: url('fotos/IMG_6.png');
-    }
-    80% {
-        background-image: url('fotos/2.png');
-    }
-}
 
 /*------------------------------------------------------------------------------------------*/
 /* Estilo para la sección del restaurante */
@@ -732,38 +776,54 @@ img#logo-footer {
 /*-----------------------------------------------------------------------------------------------*/
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* Estilos para la sección de galería */
+#galeria {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f2f2f2;
+}
 
-/*estilos para el carrusel de imagenes */
-body {
-    margin: 0;
-  }
+#carrusel-habitaciones,
+#carrusel-restaurantes,
+#carrusel-eventos {
+    margin-top: 30px;
+}
+
+.carrusel-container {
+    width: 100%; /* Ajustado al 100% */
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid #ccc; /* Borde para visualizar mejor */
+}
+
 .carrusel {
-  height: 100vh;
-  display: flex;
-  align-items: flex-end;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
 .carrusel-items {
-  display: flex;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  padding: 2% 0; /* Ajustado el padding */
+    display: flex;
+    width: 1800px; /* Ajustado para permitir espacio para todas las imágenes */
 }
 
 .carrusel-item {
-  min-width: 15%;
-  max-width: 15%;
-  height: 200px;
-  outline: 2px solid black;
-  cursor: pointer;
+    margin-right: 10px;
 }
 
 .carrusel-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
-.carrusel-item:hover {
-  transform: scale(1.2);
+/* Flechas de navegación del carrusel (puedes personalizarlas) */
+.carrusel-prev,
+.carrusel-next {
+    cursor: pointer;
+    font-size: 24px;
+    margin-top: 50px;
+    color: #333;
 }
+
+/* Puedes agregar más estilos según tus preferencias */
