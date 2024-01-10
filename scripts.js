@@ -15,8 +15,6 @@ function mostrarSeccion(seccionId) {
     
 }
 ////////////////////////////////////////////////////////////////////////////////////
-
-///////////////////////////////////////////////////////////////////////////////////
 //script para el video comercial de la pagina de inicio
 window.fbAsyncInit = function() {
     FB.init({
@@ -258,7 +256,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const mensajeWhatsApp = `¡Hola! Estoy interesado en reservar la habitación ${habitacion} desde el ${fechaEntrada} hasta el ${fechaSalida} para ${numAdultos} adulto(s) y ${numNinos} niño(s).`;
 
-        const enlaceWhatsApp = `https://wa.me/51903501740?text=${encodeURIComponent(mensajeWhatsApp)}`;
+        const enlaceWhatsApp = `https://wa.me/51989144109?text=${encodeURIComponent(mensajeWhatsApp)}`;
 
         window.open(enlaceWhatsApp, "_blank");
     });
