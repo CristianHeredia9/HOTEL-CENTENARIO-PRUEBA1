@@ -47,12 +47,6 @@ header {
     overflow: hidden; /* Limpiar el float dentro del encabezado */
 }
 
-/* Estilo para el título principal */
-h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
 /* Estilo para la navegación */
 nav ul {
     list-style-type: none;
@@ -72,8 +66,7 @@ nav a {
 
 /* Estilo para las secciones */
 section {
-    background-color: #e5d4c32c;
-    padding: 20px;
+    background-color: #e8dccf27;
     margin-bottom: 20px;
     border-radius: 10px;
 }
@@ -83,8 +76,8 @@ footer {
     background-color: #553725;
     color: white;
     text-align: center;
-    padding: 36px;
-    margin-top: 10px;
+    padding: 10px;
+    margin-top: 5px;
 }
 
 /* Estilo para el logo en el footer */
@@ -102,7 +95,7 @@ img#logo-footer {
     display: inline-block;
     text-align: center;
     vertical-align: middle;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 /* Estilo para los títulos en los divs */
@@ -118,48 +111,28 @@ img#logo-footer {
 }
 
 /*-----------------------------------------------------------------*/
-/* Estilo para el contenedor del carrusel de imágenes */
-#carousel-container-inicio {
-    position: relative; /* Cambiado a relativo para que los elementos absolutos se posicionen en relación con este contenedor */
-    height: 50vh; /* Ajusta la altura según sea necesario */
-}
-
-/* Estilo para el contenedor del video de Facebook */
-
-#fb-video-container {
-    position: absolute;
-    top: 10%; /* Ajusta el valor según sea necesario para acercar el video al texto o la barra de navegación */
-    left: 50%; /* Cambiado de 30% a 50% para centrar horizontalmente */
-    transform: translate(-50%, -50%);
-    width: 70%;
-    max-width: 800px;
-    z-index: 2;
-}
-
-/* Estilos adicionales para dispositivos pequeños */
-@media screen and (max-width: 768px) {
-    #fb-video-container {
-        width: 90%;
-        left: 50%; /* Cambiado de 5% a 50% para centrar horizontalmente */
-    }
-}
 
 
 /*-----------------------------------------------------------------*/
-/* Estilo para el carrusel de la seccion de inicio  */
+/* Estilo para el contenedor del carrusel de imágenes */
 #carousel-container-inicio {
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+    z-index: -1; /* Asegura que el carrusel esté detrás del contenido */
+}
+
+/* Estilo para las imágenes del carrusel */
+#carousel-container-inicio::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    background-size: cover;
     z-index: -1;
     animation: carousel-inicio 30s infinite;
-    background-size: cover;
-    margin-bottom: 1px;
-}
-#map-container {
-    margin-bottom: 1px; /* Ajusta el margen inferior según tus preferencias */
 }
 
 @keyframes carousel-inicio {
@@ -179,127 +152,149 @@ img#logo-footer {
         background-image: url('fotos/2.png');
     }
 }
-/*---------------------------------------------------------------------------------------------------------*/
-/* Estilos para el cuadro de texto de información del hotel */
-.hotel-info-container {
-    background-color: #E5C9AE; /* Color de fondo del cuadro */
-    padding: 15px; /* Espaciado interno del cuadro */
-    border-radius: 10px; /* Borde redondeado */
-    margin-top: 20px; /* Margen superior para separarlo de otros elementos */
-    overflow: hidden; /* Oculta el contenido que sobresale del cuadro */
-    float: right; /* Alinea el cuadro a la derecha */
-    max-width: 35%; /* Establece el ancho máximo del cuadro */
-    box-sizing: border-box; /* Incluye relleno y bordes en el ancho total */
+
+/* Estilos para el título de la sección de inicio */
+#inicio h3 {
+    font-size: 3em;
+    color: #3498db;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 2; /* Ajustado para que esté sobre el carrusel */
 }
 
-.hotel-info-container h2 {
-    font-size: 22px;
+#inicio h3::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: #3498db;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+#inicio h3:hover::after {
+    transform: scaleX(1);
+}
+
+/* Estilos para el párrafo de la sección de inicio */
+#inicio p {
+    font-size: 1.4em;
+    color: #95a5a6;
+    max-width: 800px;
+    margin: 20px auto; /* Ajuste para separar más del carrusel */
+    line-height: 1.6;
+    text-align: center;
+    position: relative;
+    z-index: 2; /* Ajustado para que esté sobre el carrusel */
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------*/
+/* Estilos para el contenedor de redes sociales */
+#redes-sociales-container {
+    text-align: center; /* Centramos el texto horizontalmente */
+    margin-top: 20px; /* Ajustamos el margen superior */
+}
+
+/* Estilos para el texto "Síguenos en:" */
+#siguenos-texto {
+    font-size: 1.5em;
+    color: #2c3e50; /* Cambia el color según tus preferencias */
     margin-bottom: 10px;
 }
 
-.hotel-info-container p {
-    margin-bottom: 15px;
-    line-height: 1.4;
-    overflow: hidden; /* Oculta el contenido que sobresale del cuadro */
-    max-height: 90px; /* Establece la altura máxima por defecto */
-}
-
-#verMasBtn {
-    background-color: #D6AB7D;
-    color: #ffffff;
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    display: block; /* Muestra el botón como un bloque para ajustar el ancho automáticamente */
-    margin-top: 10px; /* Añade un espacio superior para separarlo del texto */
-}
-
-#verMasBtn:hover {
-    background-color: #553725;
-}
-
-/*--------------------------------------------------------------------------------------------------*/
-#redes-sociales-container {
-    display: flex;
-    align-items: center;
-    margin-top: 500px; /* Ajusta el valor según la separación que desees */
-}
-
-/* Estilo para el texto "Síguenos en:" */
-#siguenos-texto {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Utiliza la fuente que prefieras */
-    font-size: 20px;
-    font-weight: bold; /* Hace que el texto sea más notable */
-    color: #fbfbfb;
-    margin-right: 10px;
-}
-
-/* Estilo para los íconos de redes sociales */
+/* Estilos para los iconos de redes sociales */
 .social-icon {
-    font-size: 40px; /* Ajusta el tamaño de los íconos */
-    margin-right: 15px; /* Añade un espacio entre los íconos */
-    color: #333; /* Color por defecto */
-    transition: color 0.3s ease; /* Transición de color al pasar el mouse */
+    font-size: 2em;
+    margin: 0 15px; /* Añadimos espacio entre los iconos */
+    transition: color 0.3s ease; /* Añadimos transición de color para un efecto suave al pasar el ratón */
 }
 
-/* Colores específicos para cada red social */
-.facebook { color: #1877f2; }
-.instagram { color: #bc2a8d; }
-.tiktok { color: #69c9d0; }
+.social-icon.facebook {
+    color: #1877f2; /* Color original de Facebook */
+}
 
-/* Cambia el color al pasar el mouse */
+.social-icon.instagram {
+    color: #c32aa3; /* Color original de Instagram */
+}
+
+.social-icon.tiktok {
+    color: #69c9d0; /* Color original de TikTok */
+}
+
 .social-icon:hover {
-    color: #f61212; /* Nuevo color al pasar el mouse */
+    color: #e74c3c; /* Cambia el color al pasar el ratón para destacar */
 }
+
 /*-----------------------------------------------------------------------------*/
-/*Estilos para las amenidades en la secion de inicio*/
+/* Estilos mejorados para las amenidades en la sección de inicio */
 #amenidades {
     display: flex;
-    justify-content: space-around; /* Distribuye los elementos horizontalmente */
-    align-items: center; /* Centra verticalmente los elementos */
-    background-color: #E5C9AE; /* Color de fondo intercalado */
-    padding: 10px; /* Espaciado interno */
-    border-radius: 10px; /* Borde redondeado */
-    margin-top: 20px; /* Margen superior para separarlo de otros elementos */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5C9AE;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 .amenidad {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra los elementos verticalmente */
-    color: #D6AB7D; /* Color del texto */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el icono */
+    text-align: center;
+    color: #D6AB7D;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    flex: 1 1 45%; /* Ajuste para dispositivos móviles */
+    margin: 8px; /* Espaciado entre amenidades */
 }
 
 .amenidad i {
-    font-size: 30px; /* Tamaño del icono */
-    margin-bottom: 10px; /* Espacio inferior entre el ícono y el texto */
-    transition: color 0.3s ease; /* Transición de color al pasar el mouse */
+    font-size: 24px; /* Tamaño reducido del ícono */
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
 }
 
 .amenidad p {
-    margin-top: 5px; /* Espacio superior entre el ícono y el texto */
-    font-size: 14px; /* Tamaño del texto */
+    margin-top: 5px;
+    font-size: 12px; /* Tamaño reducido del texto */
 }
 
 /* Línea de división */
 .amenidad:not(:last-child) {
     border-right: 1px solid #D6AB7D;
-}
-
-/* Centrar el icono horizontalmente */
-.amenidad i {
-    margin-left: auto;
-    margin-right: auto;
+    margin-right: 8px; /* Espaciado entre amenidades */
 }
 
 /* Cambio de color al pasar el mouse */
-.amenidad:hover i {
-    color: #E5C9AE; /* Cambia el color del ícono */
+.amenidad:hover {
+    color: #fff; /* Color del texto al pasar el mouse */
 }
 
+/* Cambio de color del ícono al pasar el mouse */
+.amenidad:hover i {
+    color: #fff;
+}
 
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*Estilos para el mapa*/
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /*Estilos para el carrusel de imagenes de fondo de la seccion reservar*/
 #carousel-container {
     position: absolute;
