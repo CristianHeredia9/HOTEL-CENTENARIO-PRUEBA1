@@ -665,7 +665,7 @@ img#logo-footer {
 /*------------------------------------------------------------------------------------------*/
 /* Estilo para la sección del restaurante */
 #restaurante {
-    background-color: #f7f7f767;
+    background-color: #f7f7f71e;
     padding: 50px 0;
     text-align: center;
 }
@@ -679,7 +679,7 @@ img#logo-footer {
 
 /* Estilo para el párrafo de la sección del restaurante */
 #restaurante p {
-    color: #210101;
+    color: #ffffff;
     font-size: 1.2em;
     max-width: 800px;
     margin: 0 auto 30px auto;
@@ -692,7 +692,7 @@ img#logo-footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #e5c9ae85;
+    background-color: #e5c9ae1b;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -714,7 +714,7 @@ img#logo-footer {
     color: #282828;
     text-align: left;
     padding: 20px;
-    background-color: #debea2c0;
+    background-color: #debea26e;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -726,7 +726,7 @@ img#logo-footer {
 
 /* Estilo para los cuadros de texto de cada restaurante */
 .restaurante .texto-container {
-    background-color: #c1906d68;
+    background-color: #c1906d56;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
